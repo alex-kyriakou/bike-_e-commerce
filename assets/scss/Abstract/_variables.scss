@@ -1,7 +1,8 @@
-$body-bg: #fff;
-$main-color: #f54749;
-$txt-color: #000;
-$txt-white: #fff;
+$bg-color: #1d1d1d;
+$dark-grey-color: #3a3a3a;
+$txt-dark-color: #bbbb;
+$txt-white-color: #fff;
+$black-color: rgb(15, 14, 14);
 
 $header-height: 128px;
 $header-shrink-height: 90px;
@@ -13,7 +14,7 @@ $tablet-width: 1024px;
 
 $border-radius: 30px;
 
-$font-family: "Signika", sans-serif;
+$font-family: "Roboto", sans-serif;
 
 $bg-linear: linear-gradient(
   180deg,
