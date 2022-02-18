@@ -1,0 +1,80 @@
+@use "../Abstract/" as *;
+
+.hero {
+  padding-top: $header-height;
+  height: 100vh;
+  position: relative;
+  font-family: inherit;
+
+  &-slide__container {
+    height: 100%;
+    position: relative;
+  }
+
+  //   Slide
+  &-slide {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    &.active {
+      height: 100%;
+    }
+
+    &__info {
+      width: 42%;
+      padding: 0 60px;
+    }
+    &__description {
+      color: $txt-dark-color;
+      margin-bottom: 4rem;
+      //   line-height: 1.3rem;
+      //   letter-spacing: 1px;
+      font-size: 1.5rem;
+    }
+
+    &__btn .hero-btn {
+      font-size: 1.5rem;
+      padding: 0.75rem 1.5rem;
+      border: 1px solid $txt-white-color;
+      border-radius: 10px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $txt-white-color;
+      }
+    }
+
+    &__title {
+      font-size: 6rem;
+      white-space: nowrap;
+      color: $txt-white-color;
+
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 4px;
+
+      @include tablet {
+        font-size: 4rem;
+      }
+
+      @include mobile {
+        font-size: 2rem;
+      }
+    }
+
+    &__img {
+      width: 58%;
+      padding-right: 60px;
+      padding-top: 80px;
+      z-index: 1;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
