@@ -1,13 +1,14 @@
 @use "../Abstract/" as *;
 
 header {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: $header-height;
+  z-index: 99;
   transition: height 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 
   &.shrink {
@@ -25,9 +26,13 @@ header {
     height: $header-mobile-height;
   }
 
-  &.active {
-    background-color: $black-color;
-  }
+  // &.shrink {
+  //   background-color: $black-color;
+
+  //   &:hover {
+  //     color: $txt-white-color;
+  //   }
+  // }
 
   .header-inner {
     @include flex(center, space-between);
