@@ -1,0 +1,30 @@
+@use "../Abstract/" as *;
+
+.btn {
+  display: inline-block;
+  border: 1px solid $txt-white-color;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+}
+
+.hero-btn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+
+  i {
+    margin-left: 0.5rem;
+  }
+}
+
+.hero-slide__btn {
+  transition: box-shadow 0.3s ease 0s, color 0.3s 0s;
+  &:hover > * {
+    color: $txt-white-color;
+  }
+  &:hover {
+    box-shadow: rgba(137, 137, 209, 0.589) 0px 4px 16px,
+      rgba(129, 129, 190, 0.568) 0px 8px 32px;
+  }
+}
